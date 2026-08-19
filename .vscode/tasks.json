@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	    {
+	        "label": "Build SJASMPlus",
+	        "type": "shell",
+	        "command": "sjasmplus",
+	        "args": [
+		  "C:\\DEV\\DonkeyKong\\dkdasm-master\\${fileBasename}",
+		  "--lst=${fileDirname}/${fileBasenameNoExtension}.lst",
+		  "--raw=${fileDirname}/${fileBasenameNoExtension}.bin",
+		  "--lstlab",
+		  "--sym=${fileDirname}/${fileBasenameNoExtension}.sym"
+	        ],
+	        "group": {
+		  "kind": "build",
+		  "isDefault": true
+	        },
+	        "problemMatcher": []
+	    }
+	]
+      }
